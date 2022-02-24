@@ -13,6 +13,6 @@ void main(void)
         RD7 = 0;
         __delay_ms(delay_ms);
     }
-    
+        
     return;
 }
