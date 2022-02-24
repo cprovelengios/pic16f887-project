@@ -1,0 +1,9 @@
+# Folders
+build/
+debud/
+dist/
+nbproject/
+
+# Files
+Makefile
+
