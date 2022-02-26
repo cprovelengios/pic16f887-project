@@ -27,6 +27,6 @@
 #include "i2c.h"
 #include "lcd.h"
 #include "leds.h"
-//#include "photoresistor.h"
+#include "photoresistor.h"
 
 #endif
