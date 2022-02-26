@@ -1,7 +1,7 @@
 #ifndef __INCLUDES_H
 #define __INCLUDES_H
 
-// CONFIG PIC16F887, #pragma config statements should precede project file includes.
+// CONFIG PIC16F887, #pragma config statements should precede project file includes
 #pragma config FOSC = INTRC_NOCLKOUT// Oscillator Selection bits (INTOSCIO oscillator: I/O function on RA6/OSC2/CLKOUT pin, I/O function on RA7/OSC1/CLKIN)
 #pragma config WDTE = OFF           // Watchdog Timer Enable bit (WDT disabled and can be enabled by SWDTEN bit of the WDTCON register)
 #pragma config PWRTE = ON           // Power-up Timer Enable bit (PWRT enabled)
@@ -20,7 +20,13 @@
 // Define CPU Frequency. This must be defined, if __delay_ms() or __delay_us() functions are used in the code
 #define _XTAL_FREQ 4000000
 
+// Define 24LC64 i2c device address
+#define I2C_PCF8574_ADDR 0x27
+
 #include <xc.h>
+#include "i2c.h"
+#include "lcd.h"
 #include "leds.h"
+//#include "photoresistor.h"
 
 #endif
